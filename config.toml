@@ -69,7 +69,10 @@ scriptsrc = [
 ]
 prefetchsrc = ["'self'"]
 # connect-src directive – defines valid targets for to XMLHttpRequest (AJAX), WebSockets or EventSource
-connectsrc = ["'self'"]
+connectsrc = [
+  "'self'",
+  "https://a.xhemj.work"
+]
 
 [taxonomies]
 category = "categories"
