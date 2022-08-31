@@ -47,7 +47,7 @@ author = "解恪布"
 ## 友情链接：
 
 - [厦门市音乐学校](https://xmyyxx.xmedu.cn/)
-- [xhemj.com](https//xhemj.com/)
+- [xhemj.com](https://xhemj.com/)
 - [erssmy.com](https://www.erssmy.com/)
 - [erssbk.com](https://www.erssbk.com/)
 

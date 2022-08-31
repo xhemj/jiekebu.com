@@ -19,8 +19,12 @@ slug = "projects"
 
 ## 3/ 耳斯自媒体社
 
+<wiki-card img="https://wikioss.xhemj.work/krzfs/jiekebu/26ae47ec4ce568ab11bf1d1b12ddca4c.jpg">
+  耳斯自媒体社
+</wiki-card>
+
 ## 4/ IYAMAYA 耳斯工作室
 
 <wiki-card img="https://wikioss.xhemj.work/krzfs/jiekebu/bb5c53de3d0b0b64629fc4f8c6747521.jpg">
-  IYAMAYA 工作室
+  IYAMAYA 耳斯工作室
 </wiki-card>

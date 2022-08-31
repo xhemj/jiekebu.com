@@ -960,7 +960,7 @@ figure {
   font-size: 1.3rem !important; }
 
 .bg-main {
-  background-repeat: repeat-y;
+  background-repeat: repeat;
   background-position: center;
   background-size: contain; }
 
