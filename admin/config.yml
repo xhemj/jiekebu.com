@@ -1,28 +1,13 @@
 backend:
-  name: github
-  repo: xhemj/jiekebu.com # Path to your GitHub repository
-
-publish_mode: editorial_workflow
+  name: git-gateway
 
 media_folder: "static/images" # Folder where user uploaded files should go
 public_folder: "/images/uploads"
 
-i18n:
-  # Required and can be one of multiple_folders, multiple_files or single_file
-  # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
-  # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
-  # single_file - persists a single file in `<folder>/<slug>.<extension>`
-  structure: multiple_folders
-
-  # Required - a list of locales to show in the editor UI
-  locales: [zh_Hans, en]
-
-  # Optional, defaults to the first item in locales.
-  # The locale to be used for fields validation and as a baseline for the entry.
-  default_locale: zh_Hans
+locale: "zh_Hans"
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+  - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "文章" # Used in the UI, ie.: "New Post"
     folder: "content/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
@@ -30,6 +15,7 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "标题", name: "title", widget: "string" }
       - { label: "作者", name: "author", widget: "string", default: "解恪布" }
       - { label: "发布时间", name: "date", widget: "datetime" }
+      - { label: "标签", name: "tags", widget: "list", default: ["news"] }
       - {
           label: "文章简介",
           name: "description",
