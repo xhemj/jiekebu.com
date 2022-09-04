@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "https://dash.jiekebu.com/$1" }
+    { "source": "/(.*)", "destination": "https://jiekebu-dash.netlify.app/$1" }
   ]
 }
