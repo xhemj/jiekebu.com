@@ -1,0 +1,56 @@
+backend:
+  name: github
+  repo: xhemj/jiekebu.com # Path to your GitHub repository
+
+publish_mode: editorial_workflow
+
+media_folder: "static/images" # Folder where user uploaded files should go
+public_folder: "/images/uploads"
+
+i18n:
+  # Required and can be one of multiple_folders, multiple_files or single_file
+  # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
+  # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
+  # single_file - persists a single file in `<folder>/<slug>.<extension>`
+  structure: multiple_folders
+
+  # Required - a list of locales to show in the editor UI
+  locales: [zh_Hans, en]
+
+  # Optional, defaults to the first item in locales.
+  # The locale to be used for fields validation and as a baseline for the entry.
+  default_locale: zh_Hans
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "文章" # Used in the UI, ie.: "New Post"
+    folder: "content/posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "作者", name: "author", widget: "string", default: "解恪布" }
+      - { label: "发布时间", name: "date", widget: "datetime" }
+      - {
+          label: "文章简介",
+          name: "description",
+          widget: "string",
+          required: false,
+        }
+      - { label: "正文", name: "body", widget: "markdown" }
+  - name: "pages"
+    label: "其它页面"
+    files:
+      - file: "content/about.md"
+        label: "关于"
+        name: "about"
+        fields:
+          - { label: "标题", name: "title", widget: "string" }
+          - { label: "发布时间", name: "date", widget: "datetime" }
+          - { label: "Slug", name: "slug", widget: "hideen", default: "about" }
+          - {
+              label: "文章简介",
+              name: "description",
+              widget: "string",
+              required: false,
+            }
+          - { label: "正文", name: "body", widget: "markdown" }
