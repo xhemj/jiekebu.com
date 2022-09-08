@@ -15,7 +15,7 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "标题", name: "title", widget: "string" }
       - { label: "作者", name: "author", widget: "string", default: "解恪布" }
       - { label: "发布时间", name: "date", widget: "datetime" }
-      - { label: "标签", name: "tags", widget: "list", default: ["news"] }
+      - { label: "标签", name: "tags", widget: "list", default: ["随笔"] }
       - {
           label: "文章简介",
           name: "description",
