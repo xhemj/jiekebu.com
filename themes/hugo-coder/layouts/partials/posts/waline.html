@@ -1,0 +1,21 @@
+{{- if and (not (eq (.Site.Params.WalineServer | default "") "")) (eq
+(.Params.disableComments | default false) false) -}}
+<div class="waline-comment"></div>
+<script src="https://npm.elemecdn.com/@waline/client@2.7.1/dist/waline.js"></script>
+<link
+  rel="stylesheet"
+  href="https://npm.elemecdn.com/@waline/client@2.7.1/dist/waline.css"
+/>
+<script>
+  Waline.init({
+    el: ".waline-comment",
+    serverURL: "{{ .Site.Params.WalineServer }}",
+    dark: "body.colorscheme-dark",
+    meta: ["nick", "mail"],
+    wordLimit: 100,
+    imageUploader: false,
+    emoji: ["https://npm.elemecdn.com/@waline/emojis@1.1.0/bilibili"],
+    pageview: true,
+  });
+</script>
+{{- end -}}

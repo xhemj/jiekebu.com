@@ -44,35 +44,7 @@ customCSS = [
 customSCSS = []
 # Custom JS
 customJS = []
-
-# If you want to implement a Content-Security-Policy, add this section
-[params.csp]
-childsrc = ["'self'"]
-fontsrc = [
-  "'self'",
-  "https://fonts.gstatic.com",
-  "https://fontsoss.xhemj.work"
-]
-formaction = ["'self'"]
-framesrc = ["'self'"]
-imgsrc = ["'self'", "https://wikioss.xhemj.work"]
-objectsrc = ["'none'"]
-stylesrc = [
-  "'self'",
-  "'unsafe-inline'",
-  "http://fonts.googleapis.com"
-]
-scriptsrc = [
-  "'self'",
-  "'unsafe-inline'",
-  "https://staticoss.xhemj.work"
-]
-prefetchsrc = ["'self'"]
-# connect-src directive – defines valid targets for to XMLHttpRequest (AJAX), WebSockets or EventSource
-connectsrc = [
-  "'self'",
-  "https://a.xhemj.work"
-]
+WalineServer = "https://comment.jiekebu.com" # Replace if you use a custom domain
 
 [taxonomies]
 category = "categories"

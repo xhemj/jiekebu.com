@@ -984,4 +984,7 @@ article > .wiki-image {
 .footnote-ref::after {
   content: "]"; }
 
+.waline-comment .wl-power {
+  display: none !important; }
+
 /*# sourceMappingURL=coder.css.map */
