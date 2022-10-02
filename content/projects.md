@@ -28,3 +28,9 @@ slug = "projects"
 <wiki-card img="https://wikioss.xhemj.work/krzfs/jiekebu/bb5c53de3d0b0b64629fc4f8c6747521.jpg">
   IYAMAYA 耳斯工作室
 </wiki-card>
+
+## 5/ B 站全视频频道
+
+<wiki-card img="https://wikioss.xhemj.work/krzfs/jiekebu/1d38cf9717e4caa2a6ebf49f6a0d513d.jpg">
+  <a href="https://space.bilibili.com/337073401" rel="nofollow noopener noreferrer" target="_blank" >B 站全视频频道</a>
+</wiki-card>
